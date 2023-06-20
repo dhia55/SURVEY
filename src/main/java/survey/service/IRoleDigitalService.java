@@ -2,7 +2,7 @@ package survey.service;
 
 import java.util.List;
 
-import survey.entity.RoleDigital;
+import survey.entity.users.RoleDigital;
 
 public interface IRoleDigitalService {
 	

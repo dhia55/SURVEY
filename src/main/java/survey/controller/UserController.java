@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import net.bytebuddy.utility.RandomString;
 import survey.dto.passwordDto;
-import survey.entity.UserDigital;
-import survey.service.UserService;
+import survey.entity.users.UserDigital;
+import survey.service.Impl.UserService;
 
 @RestController
 public class UserController {

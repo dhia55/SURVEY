@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import survey.entity.Question;
-import survey.service.QuestionService;
+import survey.service.Impl.QuestionService;
 
 @RestController
 public class QuestionController {

@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,8 +9,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import survey.entity.RoleDigital;
-import survey.entity.UserDigital;
+import survey.entity.users.RoleDigital;
+import survey.entity.users.UserDigital;
 public class UserDetailsPrincipal implements UserDetails {
 
 

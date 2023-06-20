@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import survey.entity.TypeDigital;
-import survey.service.TypeDigitalService;
+import survey.entity.users.TypeDigital;
+import survey.service.Impl.TypeDigitalService;
 
 @RestController
 public class TypeDigitalController {

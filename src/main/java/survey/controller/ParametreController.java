@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import survey.dto.paramDto;
 import survey.entity.Parametre;
-import survey.service.ParametreService;
+import survey.service.Impl.ParametreService;
 
 @RestController
 public class ParametreController {

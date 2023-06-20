@@ -10,31 +10,28 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import survey.entity.CategorieDigital;
-import survey.service.CategorieDigitalService;
+import survey.service.Impl.CategorieDigitalService;
 
 @RestController
 public class CategoryDigitalController {
-	
-	@Autowired
-	CategorieDigitalService categorieDigitalService;
-	
-	@PostMapping("/addcategorieDigital")
-	public CategorieDigital addrole(@RequestBody CategorieDigital c)
-	{	
-		return categorieDigitalService.addCategorieDigitall(c);
-	}
-	
-	@GetMapping("/getallcategorieDigitals")
-	public List<CategorieDigital> getAll()
-	{
-		return categorieDigitalService.getAll();
-	}
-	
-	@GetMapping("/getcategorieDigitalByid/{id}")
-	public CategorieDigital getcategorieDigitalByid(@PathVariable("id") int id)
-	{
-		return categorieDigitalService.get(id);
-	}
-	
+
+  @Autowired
+  CategorieDigitalService categorieDigitalService;
+
+  @PostMapping("/addcategorieDigital")
+  public CategorieDigital addrole(@RequestBody CategorieDigital c) {
+    return categorieDigitalService.addCategorieDigitall(c);
+  }
+
+  @GetMapping("/getallcategorieDigitals")
+  public List<CategorieDigital> getAll() {
+    return categorieDigitalService.getAll();
+  }
+
+  @GetMapping("/getcategorieDigitalByid/{id}")
+  public CategorieDigital getcategorieDigitalByid(@PathVariable("id") int id) {
+    return categorieDigitalService.get(id);
+  }
+
 
 }

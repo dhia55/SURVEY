@@ -4,8 +4,7 @@ import java.util.List;
 
 import javax.mail.MessagingException;
 
-import survey.entity.User;
-import survey.entity.UserDigital;
+import survey.entity.users.UserDigital;
 
 
 public interface IUserService {

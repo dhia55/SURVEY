@@ -24,54 +24,53 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Script implements Serializable {
 
 
+  @Id
+  @Column(name = "SCRIPT_ID")
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private int scriptId;
 
-	@Id
-	@Column(name = "SCRIPT_ID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int scriptId;
-	
-	@Column(name = "SCRIPT_NAME")
-	private String scriptName;
-	
+  @Column(name = "SCRIPT_NAME")
+  private String scriptName;
+
 //	@Column(name = "DESCRIPTION")
 //	private String description;
-	
-	@Column(name = "DATE_DEBUT")
-	private Date startDate;
-	
-	@Column(name = "DATE_FIN")
-	private Date endDate;
-	
-	@Column(name = "SCRIPT_POOL")
-	private String scriptPool;
- 
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "script" )
-	@JsonIgnore
-	private List<Question> questions = new ArrayList<Question>();
-	
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "script" )
-	@JsonIgnore
-	private List<Enquete> enquetes = new ArrayList<Enquete>();
-	
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "script")
-	@JsonIgnore
-	private List<Parametre> parametres = new ArrayList<Parametre>();
 
-	public int getScriptId() {
-		return scriptId;
-	}
+  @Column(name = "DATE_DEBUT")
+  private Date startDate;
 
-	public void setScriptId(int scriptId) {
-		this.scriptId = scriptId;
-	}
+  @Column(name = "DATE_FIN")
+  private Date endDate;
 
-	public String getScriptName() {
-		return scriptName;
-	}
+  @Column(name = "SCRIPT_POOL")
+  private String scriptPool;
 
-	public void setScriptName(String scriptName) {
-		this.scriptName = scriptName;
-	}
+  @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "script")
+  @JsonIgnore
+  private List<Question> questions = new ArrayList<Question>();
+
+  @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "script")
+  @JsonIgnore
+  private List<Enquete> enquetes = new ArrayList<Enquete>();
+
+  @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "script")
+  @JsonIgnore
+  private List<Parametre> parametres = new ArrayList<Parametre>();
+
+  public int getScriptId() {
+    return scriptId;
+  }
+
+  public void setScriptId(int scriptId) {
+    this.scriptId = scriptId;
+  }
+
+  public String getScriptName() {
+    return scriptName;
+  }
+
+  public void setScriptName(String scriptName) {
+    this.scriptName = scriptName;
+  }
 
 //	public String getDescription() {
 //		return description;
@@ -81,29 +80,29 @@ public class Script implements Serializable {
 //		this.description = description;
 //	}
 
-	public Date getStartDate() {
-		return startDate;
-	}
+  public Date getStartDate() {
+    return startDate;
+  }
 
-	public void setStartDate(Date startDate) {
-		this.startDate = startDate;
-	}
+  public void setStartDate(Date startDate) {
+    this.startDate = startDate;
+  }
 
-	public Date getEndDate() {
-		return endDate;
-	}
+  public Date getEndDate() {
+    return endDate;
+  }
 
-	public void setEndDate(Date endDate) {
-		this.endDate = endDate;
-	}
+  public void setEndDate(Date endDate) {
+    this.endDate = endDate;
+  }
 
-	public List<Question> getQuestions() {
-		return questions;
-	}
+  public List<Question> getQuestions() {
+    return questions;
+  }
 
-	public void setQuestions(List<Question> questions) {
-		this.questions = questions;
-	}
+  public void setQuestions(List<Question> questions) {
+    this.questions = questions;
+  }
 
 	/*public List<Parametre> getParametres() {
 		return parametres;
@@ -112,62 +111,59 @@ public class Script implements Serializable {
 	public void setParametres(List<Parametre> parametres) {
 		this.parametres = parametres;
 	}*/
-	
-	public String getScriptPool() {
-		return scriptPool;
-	}
 
-	public void setScriptPool(String scriptPool) {
-		this.scriptPool = scriptPool;
-	}
+  public String getScriptPool() {
+    return scriptPool;
+  }
 
-	public List<Enquete> getEnquetes() {
-		return enquetes;
-	}
+  public void setScriptPool(String scriptPool) {
+    this.scriptPool = scriptPool;
+  }
 
-	public void setEnquetes(List<Enquete> enquetes) {
-		this.enquetes = enquetes;
-	}
+  public List<Enquete> getEnquetes() {
+    return enquetes;
+  }
 
-	public Script(int scriptId, String scriptName, Date startDate, Date endDate, String scriptPool,
-			List<Question> questions, List<Enquete> enquetes) {
-		super();
-		this.scriptId = scriptId;
-		this.scriptName = scriptName;
-		this.startDate = startDate;
-		this.endDate = endDate;
-		this.scriptPool = scriptPool;
-		this.questions = questions;
-		this.enquetes = enquetes;
-	}
+  public void setEnquetes(List<Enquete> enquetes) {
+    this.enquetes = enquetes;
+  }
 
-	public Script() {
-		super();
-	}
+  public Script(int scriptId, String scriptName, Date startDate, Date endDate, String scriptPool,
+                List<Question> questions, List<Enquete> enquetes) {
+    super();
+    this.scriptId = scriptId;
+    this.scriptName = scriptName;
+    this.startDate = startDate;
+    this.endDate = endDate;
+    this.scriptPool = scriptPool;
+    this.questions = questions;
+    this.enquetes = enquetes;
+  }
 
-	public List<Parametre> getParametres() {
-		return parametres;
-	}
+  public Script() {
+    super();
+  }
 
-	public void setParametres(List<Parametre> parametres) {
-		this.parametres = parametres;
-	}
+  public List<Parametre> getParametres() {
+    return parametres;
+  }
 
-	public Script(int scriptId, String scriptName, Date startDate, Date endDate, String scriptPool,
-			List<Question> questions, List<Enquete> enquetes, List<Parametre> parametres) {
-		super();
-		this.scriptId = scriptId;
-		this.scriptName = scriptName;
-		this.startDate = startDate;
-		this.endDate = endDate;
-		this.scriptPool = scriptPool;
-		this.questions = questions;
-		this.enquetes = enquetes;
-		this.parametres = parametres;
-	}
-	
-	
- 
-	
-	
+  public void setParametres(List<Parametre> parametres) {
+    this.parametres = parametres;
+  }
+
+  public Script(int scriptId, String scriptName, Date startDate, Date endDate, String scriptPool,
+                List<Question> questions, List<Enquete> enquetes, List<Parametre> parametres) {
+    super();
+    this.scriptId = scriptId;
+    this.scriptName = scriptName;
+    this.startDate = startDate;
+    this.endDate = endDate;
+    this.scriptPool = scriptPool;
+    this.questions = questions;
+    this.enquetes = enquetes;
+    this.parametres = parametres;
+  }
+
+
 }

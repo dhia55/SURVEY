@@ -1,6 +1,8 @@
 package survey.entity;
 
 
+import survey.entity.users.RoleID;
+
 import java.util.Date;
 
 import javax.persistence.Column;

@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.List;
 
@@ -6,7 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import survey.dao.TypeDigitalDao;
-import survey.entity.TypeDigital;
+import survey.entity.users.TypeDigital;
+import survey.service.ITypeDigitalService;
 
 @Service
 public class TypeDigitalService implements ITypeDigitalService {

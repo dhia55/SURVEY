@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import survey.entity.Echelle;
-import survey.service.EchelleService;
+import survey.service.Impl.EchelleService;
 
 @RestController
 public class EchelleController {

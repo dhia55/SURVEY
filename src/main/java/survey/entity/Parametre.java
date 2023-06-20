@@ -14,88 +14,87 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "PARAMETRES")
-public class Parametre implements Serializable{
+public class Parametre implements Serializable {
 
-	@Id
-	@Column(name = "PARAM_ID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	@Column(name = "PARAM_CODE")
-	private String paramCode;
-	
-	@Column(name = "PARAM_MEANING")
-	private String paramMeaning;
-	
-	@Column(name = "PARAM_DESCRIPTION")
-	private String paramDescription;
-	
-	@Column(name = "PARAM_TYPE")
-	private String paramType;
-	
-	@Column(name = "PARAM_FORMAT")
-	private String paramFormat;
+  @Id
+  @Column(name = "PARAM_ID")
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private int id;
 
-	@ManyToOne()
-	private Script script;
+  @Column(name = "PARAM_CODE")
+  private String paramCode;
 
-	
-	public Script getScript() {
-		return script;
-	}
+  @Column(name = "PARAM_MEANING")
+  private String paramMeaning;
 
-	public void setScript(Script script) {
-		this.script = script;
-	}
+  @Column(name = "PARAM_DESCRIPTION")
+  private String paramDescription;
 
-	public int getId() {
-		return id;
-	}
+  @Column(name = "PARAM_TYPE")
+  private String paramType;
 
-	public void setId(int id) {
-		this.id = id;
-	}
+  @Column(name = "PARAM_FORMAT")
+  private String paramFormat;
 
-	public String getParamCode() {
-		return paramCode;
-	}
+  @ManyToOne()
+  private Script script;
 
-	public void setParamCode(String paramCode) {
-		this.paramCode = paramCode;
-	}
 
-	public String getParamMeaning() {
-		return paramMeaning;
-	}
+  public Script getScript() {
+    return script;
+  }
 
-	public void setParamMeaning(String paramMeaning) {
-		this.paramMeaning = paramMeaning;
-	}
+  public void setScript(Script script) {
+    this.script = script;
+  }
 
-	public String getParamDescription() {
-		return paramDescription;
-	}
+  public int getId() {
+    return id;
+  }
 
-	public void setParamDescription(String paramDescription) {
-		this.paramDescription = paramDescription;
-	}
+  public void setId(int id) {
+    this.id = id;
+  }
 
-	public String getParamType() {
-		return paramType;
-	}
+  public String getParamCode() {
+    return paramCode;
+  }
 
-	public void setParamType(String paramType) {
-		this.paramType = paramType;
-	}
+  public void setParamCode(String paramCode) {
+    this.paramCode = paramCode;
+  }
 
-	public String getParamFormat() {
-		return paramFormat;
-	}
+  public String getParamMeaning() {
+    return paramMeaning;
+  }
 
-	public void setParamFormat(String paramFormat) {
-		this.paramFormat = paramFormat;
-	}
+  public void setParamMeaning(String paramMeaning) {
+    this.paramMeaning = paramMeaning;
+  }
 
-	 
+  public String getParamDescription() {
+    return paramDescription;
+  }
+
+  public void setParamDescription(String paramDescription) {
+    this.paramDescription = paramDescription;
+  }
+
+  public String getParamType() {
+    return paramType;
+  }
+
+  public void setParamType(String paramType) {
+    this.paramType = paramType;
+  }
+
+  public String getParamFormat() {
+    return paramFormat;
+  }
+
+  public void setParamFormat(String paramFormat) {
+    this.paramFormat = paramFormat;
+  }
+
 
 }

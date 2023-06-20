@@ -3,7 +3,7 @@ package survey.security;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import survey.service.UserDetailsPrincipal;
+import survey.service.Impl.UserDetailsPrincipal;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;

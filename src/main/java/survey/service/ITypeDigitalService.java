@@ -2,7 +2,7 @@ package survey.service;
 
 import java.util.List;
 
-import survey.entity.TypeDigital;
+import survey.entity.users.TypeDigital;
 
 public interface ITypeDigitalService {
 	

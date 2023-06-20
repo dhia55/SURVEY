@@ -7,67 +7,66 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class TarguetID implements Serializable{
-	
-	@Column(name="ENQ_ID")
-	private int enquete;
-	
-	@Column(name="MSISDN")
-	private String msisdn;
+public class TarguetID implements Serializable {
 
-	public int getEnquete() {
-		return enquete;
-	}
+  @Column(name = "ENQ_ID")
+  private int enquete;
 
-	public void setEnquete(int enquete) {
-		this.enquete = enquete;
-	}
+  @Column(name = "MSISDN")
+  private String msisdn;
 
-	public String getMsisdn() {
-		return msisdn;
-	}
+  public int getEnquete() {
+    return enquete;
+  }
 
-	public void setMsisdn(String msisdn) {
-		this.msisdn = msisdn;
-	}
+  public void setEnquete(int enquete) {
+    this.enquete = enquete;
+  }
 
-	public TarguetID(int enquete, String msisdn) {
-		this.enquete = enquete;
-		this.msisdn = msisdn;
-	}
+  public String getMsisdn() {
+    return msisdn;
+  }
 
-	public TarguetID() {
-		
-	}
+  public void setMsisdn(String msisdn) {
+    this.msisdn = msisdn;
+  }
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + enquete;
-		result = prime * result + ((msisdn == null) ? 0 : msisdn.hashCode());
-		return result;
-	}
+  public TarguetID(int enquete, String msisdn) {
+    this.enquete = enquete;
+    this.msisdn = msisdn;
+  }
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		TarguetID other = (TarguetID) obj;
-		if (enquete != other.enquete)
-			return false;
-		if (msisdn == null) {
-			if (other.msisdn != null)
-				return false;
-		} else if (!msisdn.equals(other.msisdn))
-			return false;
-		return true;
-	}
-	
-	
-	
+  public TarguetID() {
+
+  }
+
+  @Override
+  public int hashCode() {
+    final int prime = 31;
+    int result = 1;
+    result = prime * result + enquete;
+    result = prime * result + ((msisdn == null) ? 0 : msisdn.hashCode());
+    return result;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    TarguetID other = (TarguetID) obj;
+    if (enquete != other.enquete)
+      return false;
+    if (msisdn == null) {
+      if (other.msisdn != null)
+        return false;
+    } else if (!msisdn.equals(other.msisdn))
+      return false;
+    return true;
+  }
+
+
 }

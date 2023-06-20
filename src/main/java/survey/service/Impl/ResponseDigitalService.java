@@ -1,9 +1,8 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,9 +13,9 @@ import survey.dao.ResponseDigitalDao;
 import survey.dao.DigitalTargetDao;
 import survey.dto.responseDto;
 import survey.entity.DigitalTarget;
-import survey.entity.Question;
 import survey.entity.ResponseDigital;
 import survey.entity.ResponseDigitalID;
+import survey.service.IResponseDigitalService;
 
 @Service
 public class ResponseDigitalService implements IResponseDigitalService {
@@ -33,7 +32,7 @@ public class ResponseDigitalService implements IResponseDigitalService {
 	
 	
 	@Autowired
-	QuestionService QuestionService;
+    survey.service.Impl.QuestionService QuestionService;
 	
 	
 	@Override

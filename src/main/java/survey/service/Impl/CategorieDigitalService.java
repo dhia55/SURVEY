@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import survey.entity.CategorieDigital;
 import survey.dao.CategoryDigitalDao;
+import survey.service.ICategorieDigitalService;
 
 @Service
 public class CategorieDigitalService implements ICategorieDigitalService {

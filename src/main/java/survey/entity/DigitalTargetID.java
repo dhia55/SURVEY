@@ -9,45 +9,45 @@ import javax.persistence.GenerationType;
 
 @Embeddable
 public class DigitalTargetID implements Serializable {
-	
-	@Column(name="ENQ_ID")
-	private int enquete;
-	
-	@Column(name="ORDRE_NUM")
 
-	private int ordrenum;
-	
-	public DigitalTargetID(int enquete) {
-		super();
-		this.enquete = enquete;
-	}
+  @Column(name = "ENQ_ID")
+  private int enquete;
 
-	public int getEnquete() {
-		return enquete;
-	}
+  @Column(name = "ORDRE_NUM")
 
-	public void setEnquete(int enquete) {
-		this.enquete = enquete;
-	}
+  private int ordrenum;
 
-	public int getOrdrenum() {
-		return ordrenum;
-	}
+  public DigitalTargetID(int enquete) {
+    super();
+    this.enquete = enquete;
+  }
 
-	public void setOrdrenum(int ordrenum) {
-		this.ordrenum = ordrenum;
-	}
+  public int getEnquete() {
+    return enquete;
+  }
+
+  public void setEnquete(int enquete) {
+    this.enquete = enquete;
+  }
+
+  public int getOrdrenum() {
+    return ordrenum;
+  }
+
+  public void setOrdrenum(int ordrenum) {
+    this.ordrenum = ordrenum;
+  }
 
 
-	public DigitalTargetID(int enquete, int ordrenum) {
-		super();
-		this.enquete = enquete;
-		this.ordrenum = ordrenum;
-	}
+  public DigitalTargetID(int enquete, int ordrenum) {
+    super();
+    this.enquete = enquete;
+    this.ordrenum = ordrenum;
+  }
 
-	public DigitalTargetID() {
-		super();
-	}
-	
+  public DigitalTargetID() {
+    super();
+  }
+
 
 }

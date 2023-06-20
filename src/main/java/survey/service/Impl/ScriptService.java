@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import survey.dao.ScriptDao;
 import survey.entity.Question;
 import survey.entity.Script;
+import survey.service.IScriptService;
 
 @Service
 public class ScriptService implements IScriptService {
@@ -16,7 +17,7 @@ public class ScriptService implements IScriptService {
 	ScriptDao ScriptDao;
 	
 	@Autowired
-	QuestionService QuestionService;
+    survey.service.Impl.QuestionService QuestionService;
 
 	@Override
 	public int addScript(Script s) {

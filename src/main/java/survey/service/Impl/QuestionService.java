@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +15,7 @@ import survey.dao.ScriptDao;
 import survey.entity.Enquete;
 import survey.entity.Question;
 import survey.entity.Script;
+import survey.service.IQuestionService;
 
 @Service
 public class QuestionService implements IQuestionService {

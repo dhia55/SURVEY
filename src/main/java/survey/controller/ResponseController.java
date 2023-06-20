@@ -2,11 +2,8 @@ package survey.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import survey.entity.Echelle;
 import survey.entity.*;
-import survey.entity.Script;
-import survey.service.EchelleService;
-import survey.service.ReponseService;
+import survey.service.Impl.ReponseService;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

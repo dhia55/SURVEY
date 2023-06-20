@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.List;
 
@@ -10,14 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import survey.dao.UserDao;
 import survey.dao.UserDigitalDao;
 import survey.dto.passwordDto;
-import survey.entity.User;
-import survey.entity.UserDigital;
+import survey.entity.users.UserDigital;
+import survey.service.IUserService;
 
 @Service
-public class UserService implements IUserService{
+public class UserService implements IUserService {
 	
 	private static final Logger logger = LogManager.getLogger(UserService.class);
 	

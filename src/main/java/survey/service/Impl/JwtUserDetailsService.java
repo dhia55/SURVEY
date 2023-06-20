@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -8,11 +8,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import survey.entity.User;
-import survey.entity.UserDigital;
-
-
-
+import survey.entity.users.UserDigital;
 
 
 @Service
@@ -21,7 +17,7 @@ public class JwtUserDetailsService implements UserDetailsService {
 	private static final Logger logger = LogManager.getLogger(JwtUserDetailsService.class);
 	
 	@Autowired
-	UserService UserService;
+	survey.service.Impl.UserService UserService;
 
 	@Override
 	public UserDetails loadUserByUsername(String mail) throws UsernameNotFoundException {

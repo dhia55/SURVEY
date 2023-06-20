@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import survey.entity.JwtRequest;
-import survey.entity.UserDigital;
+import survey.entity.users.UserDigital;
 import survey.security.JwtTokenUtil;
-import survey.service.UserService;
+import survey.service.Impl.UserService;
 
 @RestController
 public class JwtAuthentificationController {

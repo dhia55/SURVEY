@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import survey.entity.RoleDigital;
-import survey.service.RoleDigitalService;
+import survey.entity.users.RoleDigital;
+import survey.service.Impl.RoleDigitalService;
 
 @RestController
 public class RoleDigitalController {

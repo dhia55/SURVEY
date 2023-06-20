@@ -1,10 +1,9 @@
-package survey.service;
+package survey.service.Impl;
 
 
 
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,15 +13,13 @@ import org.springframework.stereotype.Service;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 
-import survey.entity.DigitalTarget;
-import survey.entity.DigitalTargetID;
 import survey.entity.Enquete;
-import survey.entity.Question;
 import survey.entity.Targuet;
 import survey.entity.TarguetID;
 import survey.dao.EnqueteDao;
 import survey.dao.TarguetDao;
 import survey.dto.questionDto;
+import survey.service.ITargetService;
 
 
 @Service
@@ -37,7 +34,7 @@ public class TargetService implements ITargetService {
 	TarguetDao TarguetDao;
 	
 	@Autowired
-	EnqueteService EnqueteService;
+    DigitalTargetService.EnqueteService EnqueteService;
 	
 
 	
@@ -45,7 +42,7 @@ public class TargetService implements ITargetService {
 	EnqueteDao EnqueteDao;
 	
 	@Autowired
-	ScriptService ScriptService;
+	survey.service.Impl.ScriptService ScriptService;
 	
 	
 	@Override

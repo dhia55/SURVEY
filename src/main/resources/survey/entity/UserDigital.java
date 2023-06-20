@@ -20,6 +20,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import survey.entity.users.RoleDigital;
+import survey.entity.users.TypeDigital;
 
 @Entity
 @Table(name="Users_digital")

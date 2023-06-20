@@ -5,14 +5,14 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
- 
+import survey.entity.users.Team;
+
 @Entity
 @Table(name = "SUBTEAMS")
 public class SubTeam {

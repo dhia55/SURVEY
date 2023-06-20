@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,7 @@ import survey.dto.paramDto;
 import survey.entity.Enquete;
 import survey.entity.Parametre;
 import survey.entity.Script;
+import survey.service.IParametreService;
 
 @Service
 public class ParametreService implements IParametreService {
@@ -19,10 +20,10 @@ public class ParametreService implements IParametreService {
 	ParametreDao ParametreDao;
 	
 	@Autowired
-	EnqueteService EnqueteService;
+    DigitalTargetService.EnqueteService EnqueteService;
 	
 	@Autowired
-	ScriptService ScriptService;
+	survey.service.Impl.ScriptService ScriptService;
 
 	@Override
 	public Parametre addParam(Parametre b) {

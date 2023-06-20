@@ -21,7 +21,7 @@ import com.twilio.rest.api.v2010.account.Message;
 
 import survey.dto.questionDto;
 import survey.entity.Enquete;
-import survey.service.EnqueteService;
+import survey.service.Impl.DigitalTargetService;
 
 
 import java.text.ParseException;
@@ -33,7 +33,7 @@ public class EnqueteController {
 	private static final Logger logger = LogManager.getLogger(EnqueteController.class);
 	
 	@Autowired
-	EnqueteService enqueteService;
+    DigitalTargetService.EnqueteService enqueteService;
 	
 
 	

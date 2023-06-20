@@ -1,15 +1,12 @@
-package survey.service;
+package survey.service.Impl;
 
 import org.springframework.stereotype.Service;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import survey.entity.*;
+import survey.service.IReponseService;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import java.util.Date;
 import java.util.List;
 @Service

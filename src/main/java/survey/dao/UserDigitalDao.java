@@ -4,8 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import survey.entity.User;
-import survey.entity.UserDigital;
+import survey.entity.users.UserDigital;
 
 @Repository
 public interface UserDigitalDao  extends JpaRepository<UserDigital, Long> {

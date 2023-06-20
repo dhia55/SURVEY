@@ -1,4 +1,4 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import survey.dao.EchelleDao;
 import survey.entity.Echelle;
+import survey.service.IEchelleService;
 
 @Service
 public class EchelleService implements IEchelleService {

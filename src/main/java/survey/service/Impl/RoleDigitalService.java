@@ -1,14 +1,13 @@
-package survey.service;
+package survey.service.Impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import survey.dao.RoleDao;
 import survey.dao.RoleDigitalDao;
-import survey.entity.Role;
-import survey.entity.RoleDigital;
+import survey.entity.users.RoleDigital;
+import survey.service.IRoleDigitalService;
 
 @Service
 public class RoleDigitalService implements IRoleDigitalService {

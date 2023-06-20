@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import survey.dto.responseDto;
 import survey.entity.ResponseDigital;
-import survey.service.ResponseDigitalService;
+import survey.service.Impl.ResponseDigitalService;
 
 @RestController
 public class ResponseDigitalController {
